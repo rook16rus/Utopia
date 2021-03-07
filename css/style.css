@@ -28,6 +28,22 @@ body {
     margin: 0 auto;
 }
 
+.section h2 {
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+
+    font-weight: 600;
+    font-style: italic;
+    font-size: 60px;
+    line-height: normal;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    transform: rotate(-90deg);
+    transform-origin: left;
+}
+
 .main-header {
     display: flex;
     flex-direction: column;
@@ -149,4 +165,109 @@ body {
     border-top: none;
     background: url(../img/pattern.png) repeat-x left bottom;
     background-size: contain;
+}
+
+.about {
+    padding-top: 180px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+}
+
+.about h2 {
+    bottom: 130px;
+}
+.about-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about figure {
+    display: flex;
+    padding: 0;
+    margin: 20px 0 70px;
+}
+
+.about figcaption {
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+
+    writing-mode: vertical-rl;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: normal;
+    font-feature-settings: "zero" on, "ss05" on;
+}
+
+.about .concert-city {
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-indent: 70px;
+    margin: 0 0 5px;
+    line-height: 24px;
+}
+
+.about-column:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+
+    margin: 37px 74px 0;
+}
+
+.more-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 52px 0 0;
+}
+
+.more-link-wrapper h3 {
+    max-width: 270px;
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: normal;
+    font-variant: all-small-caps;
+    text-align: center;
+
+}
+
+.more-link {
+    display: inline-block;
+    position: relative;
+    margin-top: 108px;
+
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: normal;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.more-link::before {
+    content: "";
+
+    position: absolute;
+    top: -90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 72px;
+    background: url("../img/one-eye.png") no-repeat center;
+}
+
+.more-link:hover::before {
+    background: url("../img/double-eyes.png") no-repeat center;
+}
+
+.more-link:active {
+    opacity: 0.5;
 }
