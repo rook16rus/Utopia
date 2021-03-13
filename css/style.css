@@ -384,6 +384,12 @@ pre.track-content {
     padding: 180px 70px 20px 70px;
 }
 
+.interview h2 {
+    bottom: auto;
+    top: 650px;
+}
+
+
 .intro {
     max-width: 630px;
     margin: 0 auto 30px;
@@ -578,4 +584,258 @@ pre.track-content {
     height: 50%;
     border-bottom: 3px solid #9A40FF;
     transform: rotate(-6deg);
+}
+
+.gallery {
+    padding-top: 130px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+}
+
+.gallery-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 400px 100px 500px;
+    grid-template-rows:
+            auto
+            auto
+            auto
+            auto;
+    grid-template-areas:
+            "f1 f1 n n"
+            "f1 f1 . f2"
+            ". f3 f3 f2"
+            ". f3 f3 m";
+}
+
+.tour-info {
+    grid-area: n;
+}
+
+.first-photo {
+    grid-area: f1;
+}
+
+.second-photo {
+    grid-area: f2;
+}
+
+.third-photo {
+    grid-area: f3;
+}
+
+.gallery-link {
+    grid-area: m;
+    margin-bottom: 40px;
+}
+
+.gallery h3 {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 95px;
+    text-transform: uppercase;
+    margin: -10px 0 70px 0;
+}
+
+.gallery h3 span {
+    display: block;
+    text-indent: 165px;
+}
+
+.gallery-button-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.gallery-button {
+    width: 35px;
+    height: 30px;
+    background-image: url("../img/arrow-left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.gallery-button-next {
+    transform: rotate(180deg);
+}
+
+.gallery-button:hover,
+.gallery-button:focus {
+    opacity: 0.7;
+}
+
+.gallery-button:active {
+    opacity: 0.5;
+}
+
+.gallery figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 50px 0;
+}
+
+.gallery figcaption {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    align-self: flex-start;
+}
+
+.gallery h4 {
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    font-variant: all-small-caps;
+    text-align: center;
+    max-width: 190px;
+}
+
+.concert-tour {
+    padding-top: 60px;
+    padding-bottom: 95px;
+}
+
+.concert-tour p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 101px;
+    text-transform: uppercase;
+    font-feature-settings: "liga" off, "kern" off;
+    color: #ffffff;
+}
+
+.concert-tour p span:first-child {
+    align-self: flex-start;
+}
+
+.concert-tour p span:nth-child(2) {
+    align-self: flex-end;
+    margin-top: 15px;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 70px;
+    height: 90px;
+    margin: 50px 0 65px 0;
+    background-image: url("../img/arrow-down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mailto-link {
+    position: relative;
+    display: inline-block;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 63px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mailto-link::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    border-top: 3px solid #ffffff;
+}
+
+.mailto-link:hover::after,
+.mailto-link:focus::after {
+    border-top: none;
+    background-image: url("../img/pattern.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: contain;
+}
+
+.mailto-link:active {
+    opacity: 0.5;
+}
+
+.main-footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 3px solid #ffffff;
+}
+
+.main-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-footer-logo:hover,
+.main-footer-logo:focus {
+    opacity: 0.8;
+}
+
+.main-footer-logo:active {
+    opacity: 0.5;
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 250px;
+}
+
+.social-item {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+
+.social-link {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social-link-facebook {
+    background-image: url("../img/facebook.png");
+}
+
+.social-link-instagram {
+    background-image: url("../img/instagram.png");
+}
+
+.social-link-twitter {
+    background-image: url("../img/twitter.png");
+}
+
+.social-link:hover,
+.social-link:focus {
+    opacity: 0.8;
+}
+
+.social-link:active {
+    opacity: 0.5;
 }
